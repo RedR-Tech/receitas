@@ -1,0 +1,137 @@
+/* Fontes principais */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2d0036);
+  margin: 0;
+  padding: 0;
+  color: #f3e6ff;
+  text-align: center;
+}
+ 
+/* Banner com foto de fundo */
+.banner {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1522673607200-164d1b9f2f35?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  padding: 5rem 2rem;
+  color: white;
+}
+ 
+.banner .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(45, 0, 54, 0.6);
+}
+ 
+.banner h1 {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 10px #000;
+}
+ 
+.banner p {
+  position: relative;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #d9b3ff;
+}
+ 
+nav {
+  margin-top: -1rem;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.6);
+  border-top: 2px solid #7a1fa2;
+}
+ 
+nav button {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 30px;
+  background: #7a1fa2;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+ 
+nav button:hover {
+  background: #b266ff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(178,102,255,0.7);
+}
+ 
+section {
+  display: none;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+ 
+section.active {
+  display: block;
+  animation: fadeIn 0.6s ease;
+}
+ 
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+ 
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #d1a9ff;
+  margin-bottom: 1rem;
+}
+ 
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  border: 1px solid #7a1fa2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  color: #f3e6ff;
+  transition: 0.3s;
+}
+ 
+.card:hover {
+  transform: scale(1.02);
+  border-color: #b266ff;
+  box-shadow: 0 6px 18px rgba(178,102,255,0.7);
+}
+ 
+input, textarea {
+  width: 90%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #b266ff;
+  background: #1a1a1a;
+  color: #f3e6ff;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+input::placeholder, textarea::placeholder {
+  color: #c799ff;
+}
+ 
+button.save {
+  background: #b266ff;
+  margin-top: 0.5rem;
+  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  transition: 0.3s;
+}
+ 
+button.save:hover {
+  background: #d1a9ff;
+  color: #000;
+  transform: scale(1.05);
+}

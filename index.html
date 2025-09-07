@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Cantinho ❤️</title>
+  <!-- Fonte romântica + elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <div class="overlay"></div>
+      <h1>Bem-vinda, MINHA PRINCESA ❤️</h1>
+      <p id="fraseDoDia">Carregando frase...</p>
+    </div>
+    <nav>
+      <button onclick="showSection('receitas')"><span>🍲</span> Receitas</button>
+      <button onclick="showSection('mensagens')"><span>💌</span> Mensagens</button>
+    </nav>
+  </header>
+ 
+  <!-- Receitas -->
+  <section id="receitas">
+    <h2>Receitinhas com Amor 🍰</h2>
+    <div class="card">
+      <input type="text" id="tituloReceita" placeholder="Título da receita">
+      <textarea id="ingredientes" placeholder="Ingredientes"></textarea>
+      <textarea id="preparo" placeholder="Modo de preparo"></textarea>
+      <button class="save" onclick="addReceita()">Salvar Receita</button>
+    </div>
+    <h3>Suas receitas:</h3>
+    <div id="listaReceitas"></div>
+  </section>
+ 
+  <!-- Mensagens -->
+  <section id="mensagens">
+    <h2>Mensagens Mágicas ✨</h2>
+    <div class="card">
+      <textarea id="novaMensagem" placeholder="Escreva uma mensagem"></textarea>
+      <button class="save" onclick="addMensagem()">Enviar 💖</button>
+    </div>
+    <h3>Suas mensagens:</h3>
+    <div id="listaMensagens"></div>
+  </section>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
